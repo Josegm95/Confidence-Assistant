@@ -40,9 +40,7 @@ document.getElementById('config').addEventListener('click', () => {
     configGame();
   } else {
     rounds = 0;
-    console.log(window.location.pathname);
     alert('El numero minimo de jugadores es 3 y el numero maximo es 6');
-    window.location.assign(window.location.pathname);
   }
 });
 
@@ -114,5 +112,6 @@ document.getElementById('check').addEventListener('click', () => {
     }
   } else {
     alert('¡Juego Terminado!');
+    window.location.assign(window.location.pathname);
   }
 });
