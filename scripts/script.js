@@ -14,6 +14,7 @@ function configGame() {
     const label = document.createElement('label');
     label.innerHTML = 'Nombre de jugador';
     const input = document.createElement('input');
+    input.type = 'number';
     input.className = 'name';
     div.appendChild(label);
     div.appendChild(input);
